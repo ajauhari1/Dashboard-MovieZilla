@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
+import {IoFilm } from 'react-icons/io5'
+
 import {AppBar} from './../../components/appbar'
 import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox, RightTextBox, RightTextTop, RightTextBottom,LeftTextBottom} from './../../loginpage/design'
 
@@ -24,6 +26,7 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
               <SectionLogin>
                   <LoginBox>
                       <LeftLoginBox>
+                      <IoFilm size="2.5rem" color="blue"/>
                       <LeftSideTitle>Welcome Back!</LeftSideTitle>
                       <LeftTextBottom>Please sign in below</LeftTextBottom>
                           <LeftContact>

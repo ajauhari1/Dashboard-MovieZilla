@@ -40,7 +40,7 @@ const LeftContact = styled.div`
 const LeftSideTitle = styled.h3`
     text-align: center;
     margin-bottom: 20px;
-    font-size: 3rem;
+    font-size: 2rem;
     
 `
 
