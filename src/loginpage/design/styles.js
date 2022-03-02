@@ -1,14 +1,14 @@
 import styled from 'styled-components'
  
 const SectionLogin = styled.section`
-    height: 1000px;
+    height: 910px;
     width: 100%;
     background: lightskyblue;
     position: relative;
 `
 
 const LoginBox = styled.div`
-    width: 1050px;
+    width: 50rem;
     height: 600px;
     position: absolute;
     top: 50%;
@@ -39,11 +39,17 @@ const LeftContact = styled.div`
 `
 const LeftSideTitle = styled.h3`
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     font-size: 2rem;
     
 `
-
+const LeftTextBottom = styled.h5`
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 400;
+`
 const LeftFormInput = styled.input`
     border: none;
     width: 80%;
@@ -64,7 +70,7 @@ const LeftFormButton = styled.button`
     display: block;
     margin: auto;
     margin-top: 10px;
-    background: blue;
+    background: rgba(14, 0, 190, 0.82);
     color: #fff;
     font-weight: bold;
     
@@ -85,22 +91,16 @@ const RightTextTop = styled.h2`
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: 500;
 `
 const RightTextBottom = styled.h5`
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 19px;
+  font-size: 1rem;
   font-weight: 400;
 `
-const LeftTextBottom = styled.h5`
-  display: block;
-  width: 100%;
-  text-align: center;
-  font-size: 19px;
-  font-weight: 400;
-`
+
 
 export {SectionLogin,LoginBox,LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox,RightTextBox,RightTextTop,RightTextBottom, LeftTextBottom}
