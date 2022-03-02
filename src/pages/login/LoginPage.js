@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import {IoFilm } from 'react-icons/io5'
 
-import {AppBar} from './../../components/appbar'
+
 import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox, RightTextBox, RightTextTop, RightTextBottom,LeftTextBottom} from './../../loginpage/design'
 
  function LoginPage  (props){
@@ -22,7 +22,7 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
     }
      return( 
          <>
-       <AppBar/>
+       
               <SectionLogin>
                   <LoginBox>
                       <LeftLoginBox>
