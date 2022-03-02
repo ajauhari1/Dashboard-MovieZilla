@@ -1,0 +1,26 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+ 
+import {AppBar} from '../../components/appbar'
+
+ function PageNotFound  (props){
+     return( 
+         <>
+           <nav>
+             <ul>
+                 <li>
+                     <Link to="/dashboard">Back to Saftey</Link>
+                 </li>
+             </ul>
+         </nav>
+          <header>
+              <h1>Page Not Found</h1>
+          </header>
+         </>
+     )
+ }
+ 
+ export default PageNotFound 
+
+
+

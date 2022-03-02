@@ -1,0 +1,1 @@
+export {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox,RightTextBox,RightTextTop,RightTextBottom} from './styles'
