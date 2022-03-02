@@ -1,25 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
+import {Button} from './../../ui/buttons'
+import {BodyError, ErrorDiv, Error, ErrorMessaage} from './../../404page/design'
  
 
  function PageNotFound  (props){
      return( 
          <>
-           <nav>
-             <ul>
-                 <li>
-                     <Link to="/dashboard">Back to Saftey</Link>
-                 </li>
-             </ul>
-         </nav>
-          <header>
-              <h1>Page Not Found</h1>
-          </header>
+         <BodyError>
+            <ErrorDiv>
+                <Error>404ERROR</Error>
+                <ErrorMessaage>Sorry padawan you are far far away from our MovieZilla Store...</ErrorMessaage>
+                <Button>
+                    <Link to="/dashboard">Click Back to Dashboard</Link>
+                </Button>
+            </ErrorDiv>
+         </BodyError>
          </>
      )
  }
  
  export default PageNotFound 
-
 
 

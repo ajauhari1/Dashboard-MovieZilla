@@ -17,7 +17,7 @@ function SideBar (props) {
                         <IconButton>
                             <IoAppsSharp size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="dashboard">Dashboard Page</Link>
+                        <Link to="/dashboard">Dashboard Page</Link>
                         </SidebarListItem>
 
                         <SidebarListItem>
@@ -35,55 +35,55 @@ function SideBar (props) {
                         <IconButton>
                             <IoCopySharp size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="dashboard">Categories</Link>
+                        <Link to="*">Categories</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoColorWandOutline size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">New Releases</Link>
+                        <Link to="*">New Releases</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoPodiumSharp size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Rating</Link>
+                        <Link to="*">Rating</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoRocket size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Genre</Link>
+                        <Link to="*">Genre</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoCalendarOutline size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Year</Link>
+                        <Link to="*">Year</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoPeople size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Actor</Link>
+                        <Link to="*">Actor</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoLogoHtml5 size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Studio</Link>
+                        <Link to="*">Studio</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoTvSharp size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Blu-Ray</Link>
+                        <Link to="*">Blu-Ray</Link>
                         </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoCloudy size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">Movies to Stream</Link>
+                        <Link to="*">Movies to Stream</Link>
                         </SidebarListItem>
                     </SidebarList>
                 </SidebarMenu>
