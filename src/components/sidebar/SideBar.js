@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { IoAppsSharp, IoPerson,IoCopySharp, IoColorWandOutline, IoPodiumSharp, IoRocket , IoCalendarOutline, IoPeople, IoLogoHtml5, IoTvSharp, IoCloudy, IoCartSharp, IoWallet} from 'react-icons/io5'
+
+import { IoAppsSharp, IoPerson,IoCopySharp, IoColorWandOutline, IoPodiumSharp, IoRocket , IoCalendarOutline, IoPeople, IoLogoHtml5, IoTvSharp, IoCloudy, IoCartSharp} from 'react-icons/io5'
 
 import {SidebarContainer, SidebarWrapper, SidebarMenu, SidebarTitle, SidebarList, SidebarListItem} from './styles'
 import {IconButton} from './../../ui/buttons'
@@ -94,13 +95,6 @@ function SideBar (props) {
                             <IoCartSharp size="1.25rem" color="blue"/>
                         </IconButton>
                         <Link to="dashboard">Cart</Link>
-                        </SidebarListItem>
-
-                        <SidebarListItem>
-                        <IconButton>
-                            <IoWallet size="1.25rem" color="blue"/>
-                        </IconButton>
-                        <Link to="/">Payment Options</Link>
                         </SidebarListItem>
                     </SidebarList>
                 </SidebarMenu>

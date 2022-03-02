@@ -353,6 +353,11 @@ const GlobalStyles = createGlobalStyle`
   background-color: #fff;
 }
 
+.containerMain{
+  display: flex;
+
+}
+
 `
 
 export {GlobalStyles}

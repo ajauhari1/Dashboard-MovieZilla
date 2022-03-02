@@ -2,11 +2,11 @@ import styled from 'styled-components'; //imsc short code
 
 const SidebarContainer = styled.div`
     flex: 1;
-    height: calc(100vh - 55px);
+    height: calc(100vh - 50px);
     background-color: rgb(161, 188, 214);
     position: sticky;
     top: 50px;
-    width: 20rem;
+    
 `
 const SidebarWrapper = styled.div`
     padding: 20px;
