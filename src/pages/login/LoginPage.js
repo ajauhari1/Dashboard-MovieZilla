@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {AppBar} from './../../components/appbar'
-import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox, RightTextBox, RightTextTop, RightTextBottom} from './../../loginpage/design'
+import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox, RightTextBox, RightTextTop, RightTextBottom,LeftTextBottom} from './../../loginpage/design'
  function LoginPage  (props){
 
     let navigation = useNavigate()
@@ -23,6 +23,7 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
                   <LoginBox>
                       <LeftLoginBox>
                       <LeftSideTitle>Welcome Back!</LeftSideTitle>
+                      <LeftTextBottom>Please sign in below</LeftTextBottom>
                           <LeftContact>
                             <form onSubmit={onHandleSubmit}>
                               <LeftFormInput input type="text" required placeholder="EMAIL"/>

@@ -39,7 +39,7 @@ const LeftContact = styled.div`
 `
 const LeftSideTitle = styled.h3`
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 3rem;
     
 `
@@ -63,7 +63,7 @@ const LeftFormButton = styled.button`
     border-radius: 10px;
     display: block;
     margin: auto;
-    margin-top: 120px;
+    margin-top: 50px;
     background: blue;
     color: #fff;
     font-weight: bold;
@@ -95,6 +95,12 @@ const RightTextBottom = styled.h5`
   font-size: 19px;
   font-weight: 400;
 `
+const LeftTextBottom = styled.h5`
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+`
 
-
-export {SectionLogin,LoginBox,LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox,RightTextBox,RightTextTop,RightTextBottom}
+export {SectionLogin,LoginBox,LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox,RightTextBox,RightTextTop,RightTextBottom, LeftTextBottom}
