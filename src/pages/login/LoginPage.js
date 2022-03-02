@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import {IoFilm } from 'react-icons/io5'
 
@@ -7,7 +8,7 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
 
  function LoginPage  (props){
 
-    let navigation = useNavigate();
+    let navigation = useNavigate()
 
     // JS
     function onHandleSubmit(e){
