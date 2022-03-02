@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const SectionLogin = styled.section`
     height: 1000px;
     width: 100%;
-    background: lightblue;
+    background: lightskyblue;
     position: relative;
 `
 
@@ -63,7 +63,7 @@ const LeftFormButton = styled.button`
     border-radius: 10px;
     display: block;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
     background: blue;
     color: #fff;
     font-weight: bold;

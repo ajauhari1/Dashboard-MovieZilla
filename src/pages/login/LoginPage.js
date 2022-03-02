@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+
 import {AppBar} from './../../components/appbar'
 import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFormButton, LeftSideTitle, RightLoginBox, RightTextBox, RightTextTop, RightTextBottom,LeftTextBottom} from './../../loginpage/design'
+
  function LoginPage  (props){
 
     let navigation = useNavigate()
@@ -28,7 +30,8 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
                             <form onSubmit={onHandleSubmit}>
                               <LeftFormInput input type="text" required placeholder="EMAIL"/>
                               <LeftFormInput input type="text" required placeholder="PASSWORD"/>
-                              <LeftFormButton>Sign In</LeftFormButton>    
+                              <LeftFormButton>Sign In</LeftFormButton>
+                              <LeftFormButton>Register</LeftFormButton>     
                              </form>
                           </LeftContact>
                       </LeftLoginBox>
