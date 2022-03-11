@@ -27,7 +27,7 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
                   <LoginBox>
                       <LeftLoginBox>
                       <IoFilm size="2.5rem" color="blue"/>
-                      <LeftSideTitle>Welcome Back!</LeftSideTitle>
+                      <LeftSideTitle>Welcome Back to MovieZilla</LeftSideTitle>
                       <LeftTextBottom>Please sign in below</LeftTextBottom>
                           <LeftContact>
                             <form onSubmit={onHandleSubmit}>

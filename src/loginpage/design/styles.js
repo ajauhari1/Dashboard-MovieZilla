@@ -32,7 +32,7 @@ const LeftContact = styled.div`
     align-items: center;
     justify-content: center;
     align-self: center;
-    height: 100%;
+    height: 80%;
     width: 73%;
     margin: auto;
     
@@ -47,7 +47,7 @@ const LeftTextBottom = styled.h5`
   display: block;
   width: 100%;
   text-align: center;
-  font-size: .8rem;
+  font-size: .95rem;
   font-weight: 400;
 `
 const LeftFormInput = styled.input`
