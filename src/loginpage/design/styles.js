@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import img from './../../img/movie-image.jpg'
  
 const SectionLogin = styled.section`
     height: 100vh;
@@ -78,7 +79,7 @@ const LeftFormButton = styled.button`
 const RightLoginBox = styled.div`
     width: 59%;
     height: 100%; 
-    background: linear-gradient(212.38deg, rgba(89, 84, 255, 0.8) 0%, rgba(14, 0, 190, 0.82) 100%),url("https://static.seattletimes.com/wp-content/uploads/2019/01/web-typing-ergonomics-1020x680.jpg");
+    background-image: linear-gradient(212.38deg, rgba(89, 84, 255, 0.8) 0%, rgba(14, 0, 190, 0.82) 100%),url(${img});
 	color: #fff;
 	position: relative;
 `
