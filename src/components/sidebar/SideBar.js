@@ -30,7 +30,8 @@ function SideBar (props) {
                         <IconButton>
                             <IoAppsSharp size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/dashboard">Dashboard Page</Link>
+                        <Button to="/dashboard">Dashboard Page</Button>
+                        {/* <Link to="/dashboard">Dashboard Page</Link> */}
                         </SidebarListItem>
 
                         
