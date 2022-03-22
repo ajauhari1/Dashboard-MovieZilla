@@ -36,8 +36,8 @@ const SidebarListItem = styled.li`
     display: flex;
     align-items: center;
     border-radius: 10px;
-&:hover {
+/* &:hover {
         background-color: rgb(240, 240, 255);
-    }
+    } */
 `
 export {SidebarContainer, SidebarMenu, SidebarMainTitle, SidebarTitle, SidebarList, SidebarListItem}

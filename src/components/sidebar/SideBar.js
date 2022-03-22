@@ -17,8 +17,15 @@ function SideBar (props) {
         <SidebarContainer>
                 <SidebarMenu>
                     <SidebarMainTitle>Dashboard</SidebarMainTitle>
+                    <ProductOptions/>
                     <SidebarTitle>User</SidebarTitle>
                     <SidebarList>
+                        <SidebarListItem>
+                        <IconButton>
+                            <IoPerson size="1.25rem" color="blue"/>
+                        </IconButton>
+                        <Button onClick={onLogOutRequest}>Log Out</Button>
+                        </SidebarListItem>
                         <SidebarListItem>
                         <IconButton>
                             <IoAppsSharp size="1.25rem" color="blue"/>
@@ -26,12 +33,7 @@ function SideBar (props) {
                         <Link to="/dashboard">Dashboard Page</Link>
                         </SidebarListItem>
 
-                        <SidebarListItem>
-                        <IconButton>
-                            <IoPerson size="1.25rem" color="blue"/>
-                        </IconButton>
-                        <Button onClick={onLogOutRequest}>Log Out</Button>
-                        </SidebarListItem>
+                        
                     </SidebarList>
                 </SidebarMenu>
                 <SidebarMenu>

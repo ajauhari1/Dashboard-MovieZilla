@@ -1,20 +1,26 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-    background-color: white;
-    border:none;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 1px #Dfdfdf;
-    padding: 0.25rem 2rem;
-    margin: 1rem;
-    color: ${props => props.color || "#6e6e6e"};;
+  background-color: #555555;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  &:hover {
+    background-color: blue; /* Green */
+    color: white;
+    }
 `;
 
 const IconButton = styled.button`
      border:none;
      background-color: transparent;
      outline: none;
-     
-      
 `;
 export {Button, IconButton}

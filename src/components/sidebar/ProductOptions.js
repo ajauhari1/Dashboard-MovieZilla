@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ProductOptionStyles = styled.ul`
-   margin: 3rem 0 0;
+   margin: 1rem 0;
    a{
-       font-size:14px;
+       font-size:1rem;
        color: white;
    }
 `;
