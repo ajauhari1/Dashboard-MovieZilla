@@ -2,15 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 import { IoAppsSharp, IoPerson,IoCopySharp, IoColorWandOutline, IoPodiumSharp, IoRocket , IoCalendarOutline, IoPeople, IoLogoHtml5, IoTvSharp, IoCloudy, IoCartSharp} from 'react-icons/io5'
+import { signOut } from "firebase/auth";
+import { auth } from "libs/firebase";
 
-import {SidebarContainer, SidebarWrapper, SidebarMenu, SidebarTitle, SidebarList, SidebarListItem} from './styles'
-import {IconButton} from './../../ui/buttons'
+import {SidebarContainer,  SidebarMenu,SidebarMainTitle, SidebarTitle, SidebarList, SidebarListItem} from './styles'
+import {IconButton,Button} from './../../ui/buttons'
+import ProductOptions from "./ProductOptions";
 
 function SideBar (props) {
+    function onLogOutRequest(e) {
+        signOut(auth);
+      }
     return (  
         <SidebarContainer>
-            <SidebarWrapper>
                 <SidebarMenu>
+                    <SidebarMainTitle>Dashboard</SidebarMainTitle>
                     <SidebarTitle>User</SidebarTitle>
                     <SidebarList>
                         <SidebarListItem>
@@ -24,7 +30,7 @@ function SideBar (props) {
                         <IconButton>
                             <IoPerson size="1.25rem" color="blue"/>
                         </IconButton>
-                        <Link to="/">User Sign Out</Link>
+                        <Button onClick={onLogOutRequest}>Log Out</Button>
                         </SidebarListItem>
                     </SidebarList>
                 </SidebarMenu>
@@ -98,7 +104,6 @@ function SideBar (props) {
                         </SidebarListItem>
                     </SidebarList>
                 </SidebarMenu>
-            </SidebarWrapper>
         </SidebarContainer>
     )
 }

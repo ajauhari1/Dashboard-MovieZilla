@@ -29,7 +29,8 @@ const AppBarItem = styled.li`
 `
 
 const AppBarItemGroup = styled.li`
-    
+    display:flex;
+     gap:0.75rem;
 `
 
 

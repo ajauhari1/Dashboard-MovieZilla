@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-    background-color: ${props => props.bgcolor || "transparent"};;
+    background-color: white;
     border:none;
     border-radius: 3px;
     box-shadow: 0 0 2px 1px #Dfdfdf;
     padding: 0.25rem 2rem;
-    margin: 4rem;
+    margin: 1rem;
     color: ${props => props.color || "#6e6e6e"};;
 `;
 

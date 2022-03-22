@@ -1,20 +1,40 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { Outlet, useNavigate } from 'react-router-dom'
+
+import { onAuthStateChanged } from 'firebase/auth'
+import {auth} from 'libs/firebase'
+
 
 import {AppBar} from './../../components/appbar'
 import {SideBar} from './../../components/sidebar'
-import {Panels} from './../../components/panels'
- function DashBoardPage  (props){
-     return( 
-         <>
+import {DashBoardPageStyles} from './styles'
+
+function DashBoardPage  (props){
+    const [isUser, setIsUser] = useState(false)
+    const navigator = useNavigate();
+
+       onAuthStateChanged(auth, (user)=>{
+           if(user){
+               setIsUser(true)
+           }else{
+              setIsUser(false)
+              navigator('/')
+           }
+       })
+
+       if(isUser){
+        return (
+          <>
           <AppBar/>
-          <div className='containerMain'>
+          <DashBoardPageStyles>
             <SideBar/>
-            <Panels/>
-          </div>
-         
+            <Outlet/>
+          </DashBoardPageStyles>
          </>
-         
-     )
- }
- 
- export default DashBoardPage 
+        )
+     }else{
+         return null
+     }
+}
+
+export default DashBoardPage 
