@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { useNumberFormat } from 'hooks/useNumberFormat';
 import {AddProductStyles} from './styles'
 import {ProductEditor} from "components/products/ProductEditor";
-import { ProductImage } from 'components/products/ProductDataEntryForm/styles';
 import ProductPreview from 'assets/images/Spiderman.jpg'
 
 function AddProduct ({children, ...props})  {
