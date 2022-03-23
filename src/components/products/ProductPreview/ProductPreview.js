@@ -1,13 +1,12 @@
 import React from 'react';
 
 import {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription} from './styles';
-import PlaceHolderImage from 'assets/images/Spiderman.jpg'
 
-function ProductPreview ({children, productName, productPrice, ...props})  {
+function ProductPreview ({children, productName, productPrice, productImage, ...props})  {
   return (
         <ProductPreviewStyles  {...props}>
           <ProductImage>
-            <img src={PlaceHolderImage} alt="movie image"/>
+            <img src={productImage} alt="movie image" width="320" height="180"/>
           </ProductImage>
           <ProductName>{productName}</ProductName>
           <ProductPrice>${productPrice}</ProductPrice>

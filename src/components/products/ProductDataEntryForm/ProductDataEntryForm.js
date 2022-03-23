@@ -5,12 +5,12 @@ import {Label, Input} from 'ui/forms';
 import { TextArea } from 'ui/forms/textarea';
 import {ProductImageDropBox} from '../ProductImageDropBox';
 
-function ProductDataEntryForm ({children, handleProductName, handleProductPrice, ...props})  {
+function ProductDataEntryForm ({children, handleProductName, handleProductPrice, setProductImage, ...props})  {
   return (
         <ProductDataEntryFormStyles  {...props}>
           <ProductImage>
             <Label>Product Image</Label>
-            <ProductImageDropBox/>
+            <ProductImageDropBox setProductImage={setProductImage}/>
           </ProductImage>
         <fieldset>
             <ProductName>
