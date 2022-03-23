@@ -1,12 +1,19 @@
 import React from 'react';
 
-import {ProductPreviewStyles} from './styles'
+import {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription} from './styles';
+import PlaceHolderImage from 'assets/images/Spiderman.jpg'
 
-function ProductPreview ({children, ...props})  {
+function ProductPreview ({children, productName, ...props})  {
   return (
         <ProductPreviewStyles  {...props}>
-           <h2>ProductPreview Component</h2>
-           {children}
+          <ProductImage>
+            <img src={PlaceHolderImage} alt="movie image"/>
+          </ProductImage>
+          <ProductName>{productName}</ProductName>
+          <ProductPrice>$29.99</ProductPrice>
+          <ProductDescription>
+            Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming (2017) and Spider-Man: Far From Home (2019), and the 27th film in the Marvel Cinematic Universe (MCU).
+          </ProductDescription>
 
         </ProductPreviewStyles>
   )
