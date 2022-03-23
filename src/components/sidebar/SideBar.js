@@ -18,23 +18,21 @@ function SideBar (props) {
                 <SidebarMenu>
                     <SidebarMainTitle>Dashboard</SidebarMainTitle>
                     <ProductOptions/>
+
                     <SidebarTitle>User</SidebarTitle>
                     <SidebarList>
                         <SidebarListItem>
-                        <IconButton>
-                            <IoPerson size="1.25rem" color="blue"/>
-                        </IconButton>
-                        <Button onClick={onLogOutRequest}>Log Out</Button>
-                        </SidebarListItem>
+                            <IconButton>
+                                <IoAppsSharp size="1.25rem" color="blue"/>
+                            </IconButton>
+                            <Button to="/dashboard">Dashboard</Button>
+                        </SidebarListItem>  
                         <SidebarListItem>
-                        <IconButton>
-                            <IoAppsSharp size="1.25rem" color="blue"/>
-                        </IconButton>
-                        <Button to="/dashboard">Dashboard Page</Button>
-                        {/* <Link to="/dashboard">Dashboard Page</Link> */}
-                        </SidebarListItem>
-
-                        
+                            <IconButton>
+                                <IoPerson size="1.25rem" color="blue"/>
+                            </IconButton>
+                            <Button onClick={onLogOutRequest}>Log Out</Button>
+                        </SidebarListItem>                      
                     </SidebarList>
                 </SidebarMenu>
                 <SidebarMenu>

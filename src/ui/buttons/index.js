@@ -2,19 +2,19 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   background-color: #555555;
-  width: 75%;
+  width: 60%;
   border: none;
   border-radius: 8px;
   color: white;
-  padding: 6px 12px;
+  padding: 6px 20px;
+  margin-left: 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   &:hover {
-    background-color: blue; /* Green */
+    background-color: blue;
     color: white;
     }
 `;

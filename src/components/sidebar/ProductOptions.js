@@ -7,6 +7,7 @@ const ProductOptionStyles = styled.ul`
    a{
        font-size:1rem;
        color: white;
+       text-decoration: none;
    }
 `;
 
