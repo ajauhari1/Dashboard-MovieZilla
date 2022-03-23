@@ -3,12 +3,12 @@
  import {ProductImageDropBoxStyles} from './styles';
 
 
- function ProductImageDropBox  ({setProductImage, ...props}){
+ function ProductImageDropBox  ({setPreviewImagePath, ...props}){
     const onDrop = useCallback(acceptedFiles => {
         const path = acceptedFiles[0] ;
          
-        setProductImage(URL.createObjectURL(path))
-      })
+        setPreviewImagePath(URL.createObjectURL(path))
+      }, [])
       const {
         getRootProps,
         getInputProps,
