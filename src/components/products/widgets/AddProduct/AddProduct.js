@@ -7,6 +7,7 @@ import ProductPreview from 'assets/images/Spiderman.jpg'
 function AddProduct ({children, ...props})  {
   const [productName, setProductName] = useState('Spider Man')
   const [productPrice, setProductPrice] = useState('29.99')
+  const [productDescription, setProductDescription] = useState('Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing.')
   const [productImage, setProductImage] = useState(ProductPreview)
   const formatter = useNumberFormat()
 
@@ -17,15 +18,22 @@ function AddProduct ({children, ...props})  {
   function handleProductPrice (price){
     setProductPrice(formatter(price))
   }
+  
+  function handleProductDescription (description){
+    setProductDescription(description)
+  }
 
   return (
         <AddProductStyles  {...props}>
           <ProductEditor 
           productName={productName} 
           productPrice={productPrice} 
+          productDescription={productDescription}
           productImage={productImage}
+
           handleProductName={handleProductName}
           handleProductPrice={handleProductPrice}
+          handleProductDescription={handleProductDescription}
           setProductImage={setProductImage}
           />
         </AddProductStyles>

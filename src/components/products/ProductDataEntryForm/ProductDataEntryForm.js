@@ -5,7 +5,7 @@ import {Label, Input} from 'ui/forms';
 import { TextArea } from 'ui/forms/textarea';
 import {ProductImageDropBox} from '../ProductImageDropBox';
 
-function ProductDataEntryForm ({children, handleProductName, handleProductPrice, setProductImage, ...props})  {
+function ProductDataEntryForm ({children, handleProductName, handleProductPrice, handleProductDescription, setProductImage, ...props})  {
   return (
         <ProductDataEntryFormStyles  {...props}>
           <ProductImage>
@@ -25,7 +25,7 @@ function ProductDataEntryForm ({children, handleProductName, handleProductPrice,
           </fieldset>
           <ProductDescription>
           <Label>Product Description</Label>
-            <TextArea rows={6}/>
+            <TextArea onChange={(e)=>handleProductDescription(e.target.value.trim())} maxLength={300}/>
           </ProductDescription>
 
         </ProductDataEntryFormStyles>
