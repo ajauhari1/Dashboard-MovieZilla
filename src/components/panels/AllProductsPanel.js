@@ -20,7 +20,7 @@ function AllProductsPanel({ title, ...props }) {
               <CardInfoContainer>
                 <CardInfo>Title: Spider-Man No Way Home</CardInfo>
                 <CardInfo>Cost: $35</CardInfo>
-                <CardInfo>Step into the multiverse like never before. What could go wrong...? </CardInfo>
+                <CardInfo>Description: Step into the multiverse like never before. What could go wrong...? </CardInfo>
               </CardInfoContainer>
               <CardButtonContainer>
                 <CardButton>More Info</CardButton>
@@ -75,13 +75,13 @@ const CardButton= styled.button`
     padding: 0.625rem;
     border: 2px solid rgb(15, 34, 117);
     outline: none;
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: .9rem;
     background-color: rgb(41, 109, 211);
     
     button:hover{
-      color: black;
+    color: black;
     font-size: 1.5rem;
     }
 `;
