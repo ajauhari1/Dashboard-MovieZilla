@@ -1,4 +1,4 @@
-import { AddProductPanel, AllProductsPanel } from "components/panels"
+import { AddProductPanel, AllProductsPanel, EditProductPanel } from "components/panels"
 import React from 'react';
 
 import {Routes, Route} from "react-router-dom"
@@ -14,6 +14,7 @@ function App() {
            <Route path="dashboard" element={<DashBoardPage/>} >
                 <Route index element={<AllProductsPanel title="All Products"/>}/>
                 <Route path="add" element={<AddProductPanel title="Add New Product "/>}/>
+                <Route path="edit" element={<EditProductPanel title="Edit Product "/>}/>
             </Route>
         
            <Route path="*"  element={<PageNotFound/>}/>
