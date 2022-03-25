@@ -10,7 +10,7 @@ const SectionLogin = styled.section`
 
 const LoginBox = styled.div`
     width: 50rem;
-    height: 600px;
+    height: 480px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,7 +33,7 @@ const LeftContact = styled.div`
     align-items: center;
     justify-content: center;
     align-self: center;
-    height: 80%;
+    height: 60%;
     width: 73%;
     margin: auto;
     
