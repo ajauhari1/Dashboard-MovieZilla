@@ -51,7 +51,7 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
                               <LeftFormInput id="email" type="text" placeholder="janedoe@gmail.com" onChange={(e)=> setEmail(e.target.value)}/>
                               <LeftFormInput id="password" type="text" placeholder="account password" onChange={(e)=>setPassword(e.target.value)} />
                               <LeftFormButton>Sign In</LeftFormButton>  
-                             </form>
+                            </form>
                           </LeftContact>
                       </LeftLoginBox>
                       <RightLoginBox>
