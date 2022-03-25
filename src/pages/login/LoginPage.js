@@ -25,18 +25,18 @@ import {SectionLogin, LoginBox, LeftLoginBox, LeftContact, LeftFormInput, LeftFo
 
     });
 
-   function onLoginRequest(e){
-     e.preventDefault();
-     signInWithEmailAndPassword(auth, email, password)
-     .then(userCredential=>{
-         navigator('/dashboard') 
-     })
-     .catch(error=>{
-       // add toast messages
-       notify(error)
-     })
-  
-   }
+    function onLoginRequest(e){
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email, password)
+        .then(userCredential=>{
+            navigator('/dashboard') 
+        })
+        .catch(error=>{
+          // add toast messages
+          notify(error)
+        })
+     
+      }
      return( 
          <>
               <SectionLogin>
