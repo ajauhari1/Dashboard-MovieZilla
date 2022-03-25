@@ -17,15 +17,14 @@ function SideBar (props) {
         <SidebarContainer>
                 <SidebarMenu>
                     <SidebarMainTitle>Dashboard</SidebarMainTitle>
+                    <IconButton> <IoAppsSharp size="1.25rem" color="blue"/> </IconButton>
+                    <Link to="/dashboard">Dashboard</Link>
                     <ProductOptions/>
-
+                    
                     <SidebarTitle>User</SidebarTitle>
                     <SidebarList>
                         <SidebarListItem>
-                            <IconButton>
-                                <IoAppsSharp size="1.25rem" color="blue"/>
-                            </IconButton>
-                            <Button to="/dashboard">Dashboard</Button>
+                          
                         </SidebarListItem>  
                         <SidebarListItem>
                             <IconButton>
