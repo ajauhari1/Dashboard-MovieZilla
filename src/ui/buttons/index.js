@@ -24,4 +24,15 @@ const IconButton = styled.button`
      background-color: transparent;
      outline: none;
 `;
-export {Button, IconButton}
+
+const SubmitButton = styled(Button)`
+    background-color: ${props => props.bgcolor || '#2563eb'};
+    color: ${props => props.color || '#f8fafc'}; 
+    font-weight: ${props => props.fw || '500'}; 
+    font-size: ${props => props.fs || '14px'};
+    width: 100%;
+    padding: 0.75rem 0;
+    margin: 1.125rem 0 0 0;
+
+`;
+export {Button, IconButton, SubmitButton}
