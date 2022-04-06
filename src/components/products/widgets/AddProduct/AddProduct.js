@@ -3,13 +3,20 @@ import { useNumberFormat } from 'hooks/useNumberFormat';
 import { useAddNewProduct } from 'hooks/useAddNewProduct';
 import {AddProductStyles} from './styles'
 import {ProductEditor} from "components/products/ProductEditor";
+import { EditorFeedBack } from 'components/products/EditorFeedBack';
 import ProductPreview from 'assets/images/Spiderman.jpg'
+
+const defaults={
+  description:`Bitters fingerstache swag iPhone succulents schlitz bicycle rights mlkshk narwhal ramps cold-pressed brooklyn. Copper mug mumblecore taxidermy shaman snackwave, marfa flannel succulents biodiesl non gemo.`,
+  name: "Spider Man",
+  price:29.99
+}
 
 function AddProduct ({children, ...props})  {
   const [isWriting, setIsWriting] = useState(false)
-  const [productName, setProductName] = useState('Spider Man')
-  const [productPrice, setProductPrice] = useState('29.99')
-  const [productDescription, setProductDescription] = useState('Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man, co-produced by Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing.')
+  const [productName, setProductName] = useState(defaults.name)
+  const [productPrice, setProductPrice] = useState(defaults.price)
+  const [productDescription, setProductDescription] = useState(defaults.description)
   const [productImage, setProductImage] = useState({previewImage:ProductPreview, file:null})
   const [loading, productLoader] = useAddNewProduct();
   const formatter = useNumberFormat()
@@ -35,10 +42,14 @@ function AddProduct ({children, ...props})  {
     }
     setIsWriting(true)
     productLoader(productData, productImage.file)
+    setProductDescription(defaults.description)
+    setProductImage({previewImage:ProductPreview, file:null})
+    setProductName(defaults.name)
+    setProductPrice(defaults.price)
 
   }
   if(isWriting){
-    return <h1>Editor Feedback components</h1>
+    return <EditorFeedBack status={loading} writeCompleted={setIsWriting}/>
   }else {
   return (
         <AddProductStyles  {...props}>
