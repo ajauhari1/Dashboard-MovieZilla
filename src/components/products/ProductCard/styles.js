@@ -23,11 +23,19 @@ const CardImage= styled.img`
 `;
 
 const CardInfoContainer= styled.div`
-    padding-top: 1rem;
+    padding-top: .5rem;
+`;
+
+const CardTitle= styled.h2`
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    margin-bottom: .5rem;
+    color: white;
+    font-weight: 600;
 `;
 const CardInfo= styled.h4`
-    font-size: 1rem;
-    padding: 0 1.56rem;
+    font-size: .7rem;
+    padding: 0 1rem;
     margin-bottom: .5rem;
     color: white;
 `;
@@ -59,4 +67,4 @@ const CardButton= styled.button`
     }
 `;
 
-export {CardContainer, CardImageContainer, CardImage, CardInfoContainer, CardInfo, CardButtonContainer, CardButton  }
+export {CardContainer, CardImageContainer, CardImage, CardInfoContainer, CardInfo, CardButtonContainer, CardButton, CardTitle  }
