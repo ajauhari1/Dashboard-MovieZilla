@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {CardContainer,CardImageContainer, CardImage,CardInfoContainer,CardInfo,CardTitle,CardButtonContainer,CardButton } from './styles'
+import {CardContainer,CardImageContainer, CardImage,CardInfoContainer,CardInfo,CardTitle,CardPrice,CardButtonContainer,CardButton } from './styles'
 
 function ProductCard ({children, product, ...props})  {
   const {productName, productPrice, productDescription, imageUrl} = {...product};
@@ -11,7 +11,7 @@ function ProductCard ({children, product, ...props})  {
     </CardImageContainer>
     <CardInfoContainer>
       <CardTitle>{productName}</CardTitle>
-      <CardInfo>${productPrice}</CardInfo>
+      <CardPrice>${productPrice}</CardPrice>
       <CardInfo>{productDescription}</CardInfo>
     </CardInfoContainer>
     <CardButtonContainer>

@@ -23,18 +23,24 @@ const CardImage= styled.img`
 `;
 
 const CardInfoContainer= styled.div`
-    padding-top: .5rem;
+    padding-top: .25rem;
 `;
 
 const CardTitle= styled.h2`
     font-size: 1.5rem;
     padding: 0 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: .25rem;
     color: white;
     font-weight: 600;
 `;
+const CardPrice= styled.h4`
+    font-size: 1rem;
+    padding: 0 .5rem;
+    margin-bottom: .5rem;
+    color: white;
+`;
 const CardInfo= styled.h4`
-    font-size: .7rem;
+    font-size: .725rem;
     padding: 0 1rem;
     margin-bottom: .5rem;
     color: white;
@@ -67,4 +73,4 @@ const CardButton= styled.button`
     }
 `;
 
-export {CardContainer, CardImageContainer, CardImage, CardInfoContainer, CardInfo, CardButtonContainer, CardButton, CardTitle  }
+export {CardContainer, CardImageContainer, CardImage, CardInfoContainer, CardInfo, CardButtonContainer, CardButton, CardTitle, CardPrice  }
