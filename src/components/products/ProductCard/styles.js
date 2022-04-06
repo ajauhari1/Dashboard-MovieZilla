@@ -19,6 +19,7 @@ const CardImageContainer= styled.div`
 
 const CardImage= styled.img`
     width: 270px;
+    height: 150px;
 `;
 
 const CardInfoContainer= styled.div`
@@ -41,8 +42,16 @@ const CardButton= styled.button`
     outline: none;
     color: black;
     cursor: pointer;
-    font-size: .9rem;
+    font-size: 1.125rem;
+
+    :first-child {
+    background-color: RGB(111, 180, 255)
+  }
+
+  :nth-child(2) {
     background-color: rgb(41, 109, 211);
+    
+  }
     
     button:hover{
     color: black;

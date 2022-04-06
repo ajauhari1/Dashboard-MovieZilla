@@ -11,12 +11,12 @@ function ProductCard ({children, product, ...props})  {
     </CardImageContainer>
     <CardInfoContainer>
       <CardInfo>{productName}</CardInfo>
-      <CardInfo>{productPrice}</CardInfo>
+      <CardInfo>${productPrice}</CardInfo>
       <CardInfo>{productDescription}</CardInfo>
     </CardInfoContainer>
     <CardButtonContainer>
-      <CardButton>More Info</CardButton>
-      <CardButton>Availability</CardButton>
+      <CardButton>Edit</CardButton>
+      <CardButton>Delete</CardButton>
     </CardButtonContainer>
   </CardContainer>
   )
