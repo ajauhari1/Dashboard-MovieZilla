@@ -1,8 +1,6 @@
 import styled from 'styled-components'; //imsc short code
 
 const SidebarContainer = styled.div`
-    /* flex: 1;
-    height: calc(100vh - 50px); */
     background-color: rgb(161, 188, 214);
     box-shadow: 2px 0 4px -2px grey;
     width:250px;
